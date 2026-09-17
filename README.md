@@ -27,4 +27,5 @@ Programa desarrollado en **JavaScript** que solicita al usuario una temperatura 
 
 1. Clona este repositorio en tu máquina local:
 
-   ```bash git clone [https://github.com/javrstudent-sys/temperaturas-Jaime] (https://github.com/javrstudent-sys/temperaturas-Jaime)
+   ```bash
+   git clone [https://github.com/javrstudent-sys/logica-programacion-2] (https://github.com/javrstudent-sys/logica-programacion-2)
