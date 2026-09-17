@@ -20,9 +20,69 @@
         <p>Aqui vn instrucciones para el formulario</p>
     </section>
     <section>
-        <p>Aqui va el formulario</p>
+        <!--! SECCION DE FORMULARIO Y CARDS EN LOCAL STORAGE-->
+        <div class="container my-5">
+            <h2 class="text-center mb-5 fw-bold">Registro de Conversiones</h2>
+
+            <div class="row g-4 justify-content-center">
+
+                <!--? COLUMNA IZQUIERDA: FORMULARIO -->
+                <div class="col-lg-6">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <h3 class="card-title mb-4 text-dark">Carta de Reclutamiento</h3>
+
+                            <form id="temperaturas-form" class="needs-validation" novalidate>
 
 
+                                <!--? 1. Elección de escala -->
+                                <div class="mb-3">
+                                    <label for="escala" class="form-label">Conviete Celsius a: </label>
+                                    <select name="escla" class="form-select" id="escala" required>
+                                        <option value="" selected disabled>Elige a que escala convertir...</option>
+                                        <option value="Kelvin">Kelvin </option>
+                                        <option value="Fahrenheit">Fahrenheit </option>
+
+                                    </select>
+                                </div>
+
+                                <!--? 2. Grados a convertir -->
+                                <div class="mb-3">
+                                    <label for="grados" class="form-label">¿Cuántos grados Celsius deseas
+                                        convertir?</label>
+                                    <!-- Cambiamos type="number" por type="text" para que puedan teclear el numero.-->
+                                    <input name="grados" type="text" class="form-control" id="grados"
+                                        placeholder="Ej. 14.5 o 45" required>
+                                </div>
+
+
+                                <!--? 3 Botón de envío -->
+                                <button name="submit" type="submit" class="btn btn-dark w-100 py-2">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!--! COLUMNA DERECHA: CARDS para mostrar conversiones hechas -->
+                <div class="col-lg-6">
+                    <div class="card shadow-sm border-0 h-100" id="card-lat">
+                        <div class="card-body p-4">
+                            <h3 class="card-title mb-4 text-dark">Conversiones Registrados</h3>
+
+                            <div class="d-flex flex-column gap-3">
+                                <main id="grados-container" class="d-flex flex-column gap-3">
+                                    <!--? Aquí se inyectarán dinámicamente las cards de alumnos -->
+                                </main>
+                                <div class="text-center text-muted py-4">
+                                    <p class="mb-0">Las nuevas conversiones que registres aparecerán aquí.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
 
 
