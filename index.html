@@ -16,8 +16,13 @@
 
 <body>
     <section>
-        <h1>Bienvenido a mi formulario</h1>
-        <p>Aqui vn instrucciones para el formulario</p>
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-6">
+                <h1>Bienvenido a mi conversor de temperaturas</h1>
+                <p>Aqui podras convertir grados celcius a Kelvin o Fahrenheit, solo ingresa los grados que deseas convertir y la escala deseada. </p>
+            </div>
+        </div>
+
     </section>
     <section>
         <!--! SECCION DE FORMULARIO Y CARDS EN LOCAL STORAGE-->
@@ -35,18 +40,9 @@
                             <form id="temperaturas-form" class="needs-validation" novalidate>
 
 
-                                <!--? 1. Elección de escala -->
-                                <div class="mb-3">
-                                    <label for="escala" class="form-label">Conviete Celsius a: </label>
-                                    <select name="escla" class="form-select" id="escala" required>
-                                        <option value="" selected disabled>Elige a que escala convertir...</option>
-                                        <option value="Kelvin">Kelvin </option>
-                                        <option value="Fahrenheit">Fahrenheit </option>
 
-                                    </select>
-                                </div>
 
-                                <!--? 2. Grados a convertir -->
+                                <!--? 1. Grados a convertir -->
                                 <div class="mb-3">
                                     <label for="grados" class="form-label">¿Cuántos grados Celsius deseas
                                         convertir?</label>
@@ -54,7 +50,15 @@
                                     <input name="grados" type="text" class="form-control" id="grados"
                                         placeholder="Ej. 14.5 o 45" required>
                                 </div>
-
+                                <!--? 2. Elección de escala -->
+                                <div class="mb-3">
+                                    <label for="escala" class="form-label">Conviete Celsius a: </label>
+                                    <select name="escala" class="form-select" id="escala" required>
+                                        <option value="" selected disabled>Elige a que escala convertir...</option>
+                                        <option value="Kelvin">Kelvin </option>
+                                        <option value="Fahrenheit">Fahrenheit </option>
+                                    </select>
+                                </div>
 
                                 <!--? 3 Botón de envío -->
                                 <button name="submit" type="submit" class="btn btn-dark w-100 py-2">Enviar</button>
@@ -84,19 +88,6 @@
             </div>
         </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <script src="app.js"></script>
     <!-- Bootstrap 5 JS Bundle -->
